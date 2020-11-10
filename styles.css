@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+	margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D61820; 
+  }
+
+section {
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+    padding: 100px;
+    display: flex;
+    background: url('./images/coffee_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none; 
+}
+
+header ul li a {
+    display: inline-block;
+    color: #D61820;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+}
+
+/* header ul li a:hover{
+    border-bottom: 2px solid #D61820; 
+} */
+
+header ul li a::after {
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #D61820;
+    transition: width 0.4s;
+}
+
+header ul li a:hover::after {
+    width: 100%;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: #111;
+    font-size: 4em;
+    line-height: 1.1em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content .textBox h2 span {
+    line-height: 1.2em;
+    font-size: 2em;
+    color: #D61820;
+}
+
+/* .content .textBox h2 span:hover {
+    color: #B8F53A;
+} */
+
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    background: #D61820;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.content .textBox a:hover {
+    background: #FF323B;
+    /* animation: transRight 0.6s 1 ease-in-out; */
+}
+
+/* @keyframes transRight{
+    0% {
+        transform:translateX(0);
+    }
+    100% {
+        transform:translateX(150px);
+    }
+} */
+
+.imgBox {
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+    transition: 0.5s;
+}
+
+.imgBox img {
+    max-width: 100%;
+}
+
+.social {
+    position: relative;
+    top: 0;
+    transform: translateY(-55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    transform: scale(0.7);
+    transition: 0.4s;
+}
+
+.social li a:hover {
+    transform: scale(0.8);
+}
+
+.linkGroup {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.linkGroup .footerLinks {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+}
+
+.footerLinks .linkTitle {
+    list-style: none;
+    font-size: 20px;
+}
+
+.footerLinks li {
+    list-style: none;
+}
+
+.footerLinks li a {
+   text-decoration: none;
+   color: #888;
+   transition: 0.3s;
+}
+
+.footerLinks li a:hover {
+    color: #111;
+}
